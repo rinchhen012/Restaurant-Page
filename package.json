@@ -16,5 +16,11 @@
     "Project"
   ],
   "author": "Rinchhen",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "webpack-cli": "^3.3.12"
+  },
+  "dependencies": {
+    "webpack": "^4.44.1"
+  }
 }

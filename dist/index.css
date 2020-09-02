@@ -1,0 +1,14 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#home:hover,
+#about:hover,
+#contact:hover {
+    color: #ee6f57;
+}
