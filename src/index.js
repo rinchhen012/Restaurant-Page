@@ -31,7 +31,7 @@ about.addEventListener("click", () => {
     home.style.color = "#eeeeee";
     contact.style.color = "#eeeeee";
 });
-
+    
 contact.addEventListener("click", () => {
     contactFunc();
     contact.style.color = "#ee6f57";

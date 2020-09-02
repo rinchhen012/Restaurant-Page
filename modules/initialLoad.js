@@ -90,5 +90,5 @@ export {
     about,
     contact,
     header,
-    image,
+    image
 };
