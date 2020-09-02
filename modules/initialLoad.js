@@ -1,5 +1,12 @@
+const home = document.createElement("div");
+const about = document.createElement("div");
+const contact = document.createElement("div");
+const header = document.createElement("h1");
+const image = document.createElement("div");
+const img = document.createElement("img");
+
 // creates top & bottom section (body)
-const navBar = () => {
+const navBar = function () {
     // body container
     const content = document.getElementById('content');
     content.style.backgroundColor = "black";
@@ -10,7 +17,7 @@ const navBar = () => {
     // 1. Nav Bar(top section)
     const top = document.createElement("div");
     top.style.backgroundColor = "#2d4059";
-    top.style.fontSize = "30px";
+    top.style.fontSize = "45px";
     top.style.fontWeight = "600";
     top.style.color = "#eeeeee";
     top.style.height = "10vh";
@@ -19,21 +26,19 @@ const navBar = () => {
     top.style.justifyContent = "space-evenly";
 
     // - home tab
-    const home = document.createElement("div");
     home.setAttribute("id", "home");
     home.innerText = "Home";
     home.style.cursor = "pointer";
     home.style.textShadow = "2px 2px 8px black";
+    home.style.color = "#ee6f57";
 
     // - about tab
-    const about = document.createElement("div");
     about.setAttribute("id", "about");
     about.innerText = "About";
     about.style.cursor = "pointer";
     about.style.textShadow = "2px 2px 8px black";
 
     // - contact tab
-    const contact = document.createElement("div");
     contact.setAttribute("id", "contact");
     contact.innerText = "Contact";
     contact.style.cursor = "pointer";
@@ -45,19 +50,16 @@ const navBar = () => {
     top.appendChild(about);
     top.appendChild(contact);
 
-    return {
-        bottom,
-        home,
-        about,
-        contact
-    };
 };
 
-const initialLoad = () => {
-    alert('hello')
+// 2. bottom section
+const bottom = document.createElement("div");
+bottom.style.backgroundColor = "#ea5455";
+bottom.style.height = "90vh";
+
+const initialLoad = function () {
     // - contents for bottom section
     // - header
-    const header = document.createElement("h1");
     header.innerText = "Best Stew In Town";
     header.style.textAlign = "center";
     header.style.marginTop = "3rem";
@@ -68,8 +70,6 @@ const initialLoad = () => {
     header.style.textShadow = "2px 2px 8px black";
 
     // - image
-    const image = document.createElement("div");
-    const img = document.createElement("img");
     image.appendChild(img);
     img.src = "mark.jpg";
     img.style.height = "30rem";
@@ -79,16 +79,16 @@ const initialLoad = () => {
     img.style.display = "block";
     img.style.margin = "6rem auto auto auto";
 
-    // 2. bottom section
-    const bottom = document.createElement("div");
-    bottom.style.backgroundColor = "#ea5455";
-    bottom.style.height = "90vh";
-
     bottom.appendChild(header);
     bottom.appendChild(image);
 };
 
 export {
     initialLoad,
-    navBar
+    navBar,
+    home,
+    about,
+    contact,
+    header,
+    image,
 };

@@ -1,11 +1,13 @@
 import {
-    navBar
+    header,
+    image
 } from '../modules/initialLoad';
 
-const about = () => {
-    navBar;
+const aboutFunc = function () {
+    header.style.display = "none";
+    image.style.display = "none";
 };
 
 export {
-    about
+    aboutFunc
 };
